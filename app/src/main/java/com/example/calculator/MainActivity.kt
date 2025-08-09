@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
 
         buttonEqual.setOnClickListener {
             val expressionText = quesEditText.text.toString()
-            val fixedInput = expressionText
+            val fixedInput = `expressionText`
                 .replace("×", "*", ignoreCase = true)
                 .replace("÷","/", ignoreCase = true)
                 .replace(Regex("(\\d+)%")) {
